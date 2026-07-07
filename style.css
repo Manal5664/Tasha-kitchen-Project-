@@ -25,15 +25,62 @@ body {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.2px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .custom-navbar {
   position: relative;
   background-color: transparent;
-  padding: 20px 0;
-  transition: all 0.4s ease; /* Smooth transition for animations */
+  padding: 12px 0;
+  transition: all 0.4s ease;
   z-index: 10;
+}
+.custom-navbar .navbar-brand {
+  margin-right: 0;
+  gap: 0.75rem;
+}
+.custom-navbar .navbar-nav {
+  gap: 0.5rem;
+  align-items: center;
+}
+.custom-navbar .nav-link {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.3s ease;
+}
+.custom-navbar .nav-link:hover {
+  color: #ffd700;
+}
+.custom-navbar .navbar-toggler {
+  border-color: rgba(255,255,255,0.35);
+}
+.custom-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+.custom-navbar .nav-search {
+  min-width: 160px;
+}
+.btn-search {
+  background-color: #ffd700;
+  color: #660000;
+  border: none;
+  border-radius: 50px;
+  padding: 0.4rem 0.85rem;
+}
+.btn-search:hover {
+  background-color: #ffec99;
+}
+.custom-navbar .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.55rem;
+}
+@media (max-width: 991px) {
+  .custom-navbar .nav-search {
+    min-width: 130px;
+  }
 }
 
 /* Navbar Links */
@@ -236,7 +283,21 @@ body {
     }
     /* Maroon themed Featured Product Section */
         .featured-product {
-            
+            .highlight-card,
+   .feedback-panel {
+       border: 1px solid #f2d7d7;
+       border-radius: 16px;
+       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+   }
+
+   .feedback-panel ul {
+       padding-left: 1.2rem;
+   }
+
+   .feedback-panel li {
+       margin-bottom: 0.6rem;
+   }
+
             padding: 50px 0;
             text-align: center;
         }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Products | Utensils Mart</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { background: #fffaf5; }
+    .compare-hero {
+      background: linear-gradient(90deg, #800000, #660000);
+      color: white;
+      padding: 40px 0;
+    }
+    .compare-card {
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      background: #fff;
+    }
+    .compare-table th, .compare-table td {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <p class="h6 text-center text-light">Free Shipping All Over Pakistan Within 24hrs Delivery in Karachi</p>
+  <hr>
+  <nav class="navbar navbar-expand-lg navbar-dark my-5">
+    <div class="container">
+      <a href="index.html" class="logo-container d-flex justify-content-center align-items-center">
+        <img src="/images/logo.png" alt="Brand Logo" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="compare.html">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="review.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="compare-hero">
+    <div class="container">
+      <h1 class="mb-3">Compare Similar Utensils Easily</h1>
+      <p class="mb-0">Choose two products from the same category to compare quality, specifications, and price before buying.</p>
+    </div>
+  </section>
+
+  <div class="container py-5">
+    <div class="compare-card p-4 mb-4">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <label for="productOne" class="form-label">Select First Product</label>
+          <select id="productOne" class="form-select"></select>
+        </div>
+        <div class="col-md-6">
+          <label for="productTwo" class="form-label">Select Second Product</label>
+          <select id="productTwo" class="form-select"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare-card p-4">
+      <div class="table-responsive">
+        <table class="table compare-table mb-0">
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col" id="colOne">Product 1</th>
+              <th scope="col" id="colTwo">Product 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Name</th><td id="nameOne">-</td><td id="nameTwo">-</td></tr>
+            <tr><th scope="row">Type</th><td id="typeOne">-</td><td id="typeTwo">-</td></tr>
+            <tr><th scope="row">Price</th><td id="priceOne">-</td><td id="priceTwo">-</td></tr>
+            <tr><th scope="row">Material</th><td id="materialOne">-</td><td id="materialTwo">-</td></tr>
+            <tr><th scope="row">Warranty</th><td id="warrantyOne">-</td><td id="warrantyTwo">-</td></tr>
+            <tr><th scope="row">Best For</th><td id="useOne">-</td><td id="useTwo">-</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center text-lg-start">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-title">About Us</h5>
+          <p>Welcome to Tasha! We provide the best kitchen appliance to make your kitchen more beautiful.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Kitchenware</a></li>
+            <li><a href="review.html">Feedback</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="footer-title">Follow Us</h5>
+          <p>Connect with us for the latest recipes and kitchen hacks:</p>
+          <div class="social-icons d-flex justify-content-center justify-content-md-start">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.pinterest.com" target="_blank" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3 mt-4" style="background-color: rgba(255, 87, 87, 0.1);">
+      <i class="bi bi-egg-fried"></i> © 2024 Kitchen Delight | Cook with Passion!
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const products = [
+      { name: 'Stainless Steel Cookware Set', type: 'Cookware', price: 'PKR 8,500', material: 'Stainless Steel', warranty: '5 Years', use: 'Everyday Cooking' },
+      { name: 'Non-Stick Fry Pan', type: 'Cookware', price: 'PKR 3,200', material: 'Non-Stick Coating', warranty: '2 Years', use: 'Light Frying' },
+      { name: 'Designer Serving Tray', type: 'Dining', price: 'PKR 4,200', material: 'Steel + Wood', warranty: '1 Year', use: 'Serving Guests' },
+      { name: 'Premium Knife Set', type: 'Cutlery', price: 'PKR 5,800', material: 'Stainless Steel', warranty: '3 Years', use: 'Meal Prep' }
+    ];
+
+    const productOne = document.getElementById('productOne');
+    const productTwo = document.getElementById('productTwo');
+
+    function fillOptions() {
+      products.forEach((item, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = item.name;
+        productOne.appendChild(option.cloneNode(true));
+        productTwo.appendChild(option.cloneNode(true));
+      });
+      productOne.value = '0';
+      productTwo.value = '1';
+      updateComparison();
+    }
+
+    function updateComparison() {
+      const first = products[productOne.value];
+      const second = products[productTwo.value];
+
+      document.getElementById('colOne').textContent = first.name;
+      document.getElementById('colTwo').textContent = second.name;
+      document.getElementById('nameOne').textContent = first.name;
+      document.getElementById('nameTwo').textContent = second.name;
+      document.getElementById('typeOne').textContent = first.type;
+      document.getElementById('typeTwo').textContent = second.type;
+      document.getElementById('priceOne').textContent = first.price;
+      document.getElementById('priceTwo').textContent = second.price;
+      document.getElementById('materialOne').textContent = first.material;
+      document.getElementById('materialTwo').textContent = second.material;
+      document.getElementById('warrantyOne').textContent = first.warranty;
+      document.getElementById('warrantyTwo').textContent = second.warranty;
+      document.getElementById('useOne').textContent = first.use;
+      document.getElementById('useTwo').textContent = second.use;
+    }
+
+    [productOne, productTwo].forEach(select => select.addEventListener('change', updateComparison));
+    fillOptions();
+  </script>
+</body>
+</html>
