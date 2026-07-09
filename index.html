@@ -291,6 +291,12 @@
       }
     }
   </style>
+  <script>
+    if (!sessionStorage.getItem('utensilsMartLogoShown')) {
+      sessionStorage.setItem('utensilsMartLogoShown', 'true');
+      window.location.replace('logo.html');
+    }
+  </script>
 </head>
 
 <body>
@@ -397,7 +403,7 @@
     <button class="carousel-control-next" type="button" data-bs-target="#kitchenCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
     </button>
-  </div>
+  </div> 
 
   <div class="container py-5">
     <div class="row g-4 align-items-center">
@@ -595,7 +601,7 @@
 
       <div class="col">
         <div class="card offer-card">
-          <img src="images/flyer-2.png" class="card-img-top" alt="Offer 2">
+          <img src="./images/flyer-2" class="card-img-top" alt="Offer 2">
           <div class="card-body">
             <h5 class="card-title">Free Shipping Over $50</h5>
             <p class="card-text">Free shipping on all orders above $50. Don’t miss out on this great offer!</p>
@@ -604,9 +610,9 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col"> 
         <div class="card offer-card">
-          <img src="images/flyer-3.png" class="card-img-top" alt="Offer 3">
+          <img src="./images/flyer-3" class="card-img-top" alt="Offer 3">
           <div class="card-body">
             <h5 class="card-title">Buy 1 Get 1 Free</h5>
             <p class="card-text">Get one free item when you buy one. Only for a limited time!</p>
